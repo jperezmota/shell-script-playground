@@ -1,0 +1,26 @@
+#!/bin/bash
+runningMessage="----- Running Script -----" #Keep in mind that this can't contain space. Invalid: runningMessage = "This is not correct."
+finishingMessage="----- Finishing Terminal Script -----"
+
+
+
+echo $runningMessage
+
+
+
+echo Who are you?
+read who
+echo Hello, $who!
+
+echo How old are you
+read age
+if [ "$age" -gt 20 ] #This should contain space to be valid also.
+then 
+    echo "You can drink."
+else 
+    echo "You are too Young to drink."
+fi
+
+
+
+echo $finishingMessage

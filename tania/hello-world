@@ -1,7 +1,11 @@
 #!/bin/bash
+runningMessage="----- Running Script -----"
+finishingMessage="----- Finishing Terminal Script -----"
+
+echo $runningMessage
 
 echo Who are you?
-
 read who
-
 echo Hello, $who!
+
+echo $finishingMessage
